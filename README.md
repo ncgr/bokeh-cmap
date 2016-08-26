@@ -1,6 +1,6 @@
 # bokeh-cmap
 
-prototype of a cmap style visualization using [Bokeh](http://bokeh.pydata.org/en/latest/) framework.
+prototype of a [cmap](http://soybase.org/cmap/cgi-bin/cmap/viewer?data_source=sbt_cmap;ref_map_set_aid=GmComposite2003&ref_map_aids=GmComposite2003_K&comparative_map_left=GmConsensus40_K;highlight=%22Seed%20oil%201-2%22) style visualization using [Bokeh](http://bokeh.pydata.org/en/latest/) framework.
 
 
 :warning: this is a very quick script cobbled together while learning bokeh. Things that definitely need to be done:
@@ -26,3 +26,6 @@ bokeh serve
 ```
  python demo.py
 ```
+Now you should see in your browser:
+
+
