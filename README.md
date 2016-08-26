@@ -26,6 +26,6 @@ bokeh serve
 ```
  python demo.py
 ```
-Now you should see in your browser:
+Now you should see the chart open in your browser.
 
 
