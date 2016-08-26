@@ -12,20 +12,18 @@ prototype of a [cmap](http://soybase.org/cmap/cgi-bin/cmap/viewer?data_source=sb
 
 ## Notes
 
-1. Download Anaconda (python3) distribution from  https://www.continuum.io/downloads . miniconda is recommended. After you have the `conda` command, then
-2. Install dependencies:
+* Download Anaconda (python3) distribution from  https://www.continuum.io/downloads . miniconda is recommended. After you have the `conda` command, then
+* Install dependencies:
 ```
 conda install bokeh petl
 ```
-3. Edit `demo.py` so the SOURCES list points to two cmap format data files.
-3. Start bokeh server. This is required because this demo has some interactivity implemented in python.
+* Edit `demo.py` so the SOURCES list points to two cmap format data files.
+* Start bokeh server. This is required because this demo has some interactivity implemented in python.
 ```
 bokeh serve
 ```
-4. Run the script
+* Run the script
 ```
  python demo.py
 ```
 Now you should see the chart open in your browser.
-
-
