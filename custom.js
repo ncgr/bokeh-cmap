@@ -12,7 +12,7 @@ export class CustomView extends LayoutDOMView {
       this.listenTo(this.model.slider, 'change', () => this.render());
     }    
     render() {    
-      this.$el.html("<h1>#{ model.text }: #{ model.slider.value }</h1>");
+      this.$el.html(`<h1>${this.model.text}: ${this.model.slider.value}</h1>`);
       this.$('h1').css({ 'color': '#686d8e', 'background-color': '#2a3153' });
     }
 }
