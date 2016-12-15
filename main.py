@@ -1,9 +1,6 @@
-import numpy as np
-import pandas as pd
-
 from bokeh.io import show
 from bokeh.plotting import Figure
-from bokeh.models import Label, GlyphRenderer
+from bokeh.models import GlyphRenderer
 from bokeh.models.sources import ColumnDataSource
 
 from models.map_spine import MapSpine
