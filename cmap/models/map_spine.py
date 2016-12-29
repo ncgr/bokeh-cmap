@@ -9,8 +9,8 @@ from bokeh.util.compiler import FromFile
 script_path = path.dirname(path.abspath( __file__ ))
 
 class MapSpine(Rect):
-    
+
     __implementation__ = FromFile(script_path + '/map_spine.js')
 
     def __init__(self, **kwargs):
-        Rect.__init__(self, **kwargs)        
+        Rect.__init__(self, **kwargs)

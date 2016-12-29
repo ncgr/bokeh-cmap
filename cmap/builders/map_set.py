@@ -1,3 +1,6 @@
+'''
+MapSetBuilder: Build a Map Set from a dataframe.
+'''
 import os
 from cmap.builders.builder import Builder
 from cmap.builders.map import MapBuilder
@@ -14,9 +17,9 @@ class MapSetBuilder(Builder):
         '''
         find the map-set name based on the dataframe source path/url
         '''
-        # TODO: if the file was badly named, or from a rest api, then this name
-        # might not be descriptive. Instead the first column (map_acc) could be
-        # used, e.g. PvConsensus_GaleanoFernandez2011_a_Pv01
+        # TODO: if the file was badly named, or fetched from a rest api, then
+        # this name might not be descriptive. Instead the first column (map_acc)
+        # could be used, e.g. PvConsensus_GaleanoFernandez2011_a_Pv01
 
         filename = os.path.split(self.df.src)[1]  # path, *filename*
         self.name = os.path.splitext(filename)[0]  # *file*, ext
@@ -24,11 +27,8 @@ class MapSetBuilder(Builder):
 
     def build(self):
         self._resolve_map_set_name()
-        # group by map_name
         self.map_dfs = self.df.groupby('map_name')
         self.map_names = [name for name, group in self.map_dfs]
-        print(self.map_names)
-        # build maps from the above dataframes, the plot, and the group
         self.map_builders = [
             MapBuilder(name=name, df=group, plot=self.plot)
             for name, group in self.map_dfs
@@ -38,4 +38,3 @@ class MapSetBuilder(Builder):
         # TODO: apply selected_map, or select first one
         # TODO: get min/max of all features for current map selection
         # TODO: render map set as a select widget on our Figure
-        pass

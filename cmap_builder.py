@@ -41,7 +41,7 @@ def main():
     # plot.add_layout(glyph_renderer)
     # plot.add_layout(glyph_renderer2)
     #
-    show(plot)
+    # show(plot)
 
 
 def setup_argparse():
