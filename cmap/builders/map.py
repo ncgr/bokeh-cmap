@@ -22,7 +22,7 @@ class MapBuilder(Builder):
         self.max = self.df['map_stop'].max()
         assert self.min <= self.max, 'map_start should be less than map_stop'
         self.height = self.max - self.min
-        d = dict(x=0, y=self.min, w=10, h=self.height)
+        d = dict(x=[0], y=[self.min], w=[10], h=[self.height])
         spine_data_source = ColumnDataSource(d)
         #spine = MapSpine(x='x', y='0', height='h')
         #self.plot.add_glyph(spine_data_source, spine)
