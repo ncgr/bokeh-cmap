@@ -1,0 +1,4 @@
+Templates for server side Bokeh apps A templates subdirectory with index.html
+Jinja template file. The directory may contain additional Jinja templates for
+index.html to refer to. The template should have the same parameters as the FILE
+template. maybe this is not needed)
