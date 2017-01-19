@@ -5,7 +5,9 @@ Reimagining a [cmap](http://soybase.org/cmap/cgi-bin/cmap/viewer?data_source=sbt
 ## Notes
 
 * Download an Anaconda (python3) distribution from  https://www.continuum.io/downloads . miniconda is recommended. After you have the `conda` command, then
-* Install dependencies with conda `conda install bokeh pandas `.
+* Install pandas with conda: `conda install pandas`
+* Install bokeh with conda: `conda install bokeh or conda install -c bokeh/channel/dev bokeh`
+
 * Then Run the builder script on a cmap file:
 ```
 python cmap_builder.py example_data/BAT93_x_JALOEEP558_b.txt 
